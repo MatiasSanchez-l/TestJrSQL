@@ -153,10 +153,10 @@ WHERE persona.nombre LIKE "Jorg%";
 #D) Devuelva los meses en los cuales la cantidad de usuarios que cumpleen años es mayor a 10.
 
 #MONTH(persona.fechaNac)
-SELECT month(persona.fechaNac) AS mesNacimiento, count(persona.idUsuario) as cantidadCumplañeros
+SELECT month(persona.fechaNac) AS mesNacimiento, count(persona.idUsuario) as cantidadCumplanieros
 FROM persona
 GROUP BY mesNacimiento
-HAVING cantidadCumplañeros > 10;
+HAVING cantidadCumplanieros > 10;
 
 
 
